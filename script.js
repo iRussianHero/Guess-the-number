@@ -56,5 +56,9 @@ function check(secret, guess) {
 }
 
 function random(){
-    return '2053';
+    const secret = '0123456789'.split('')
+    .sort(() => Math.random() -0.5)
+    .slice(0, 4)
+    .join('');
+    return secret;
 }
